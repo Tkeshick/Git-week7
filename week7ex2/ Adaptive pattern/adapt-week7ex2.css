@@ -56,7 +56,6 @@
 .footer-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 10vh;
     background-color: lightsteelblue;
 }
 
@@ -64,6 +63,6 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    margin: 10px;
+    margin: 5px;
     background-color: seashell;
 }
