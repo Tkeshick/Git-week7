@@ -1,68 +1,61 @@
-.header-container {
+.container {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    background-color: cornflowerblue;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 40% 40$ 1fr;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
 }
 
-
-
-.main-container {
+.header {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-area: header;
+    background-color: antiquewhite;
+}
+
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: burlywood;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    background-color: lightblue;
-
 }
 
-.main-container-h2 {
+.main-h2 {
     display: grid;
-    grid-column: 1 / span 2;
-    justify-items: center;
-    align-items: center;
+    grid-area: 1/1/2/3;
 }
-
 
 .more-1,
 .more-2,
 .more-3 {
-    display: grid;
-    margin: 10px;
-    background-color: peachpuff;
-    justify-items: center;
-    align-items: center;
+    background-color: whitesmoke;
+    margin: 5px;
+
 }
+
 
 .more-3 {
-    display: flex;
-    grid-row: 3;
-    grid-column: 1 / span 2;
-    justify-self: stretch;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-area: 3/1/4/3;
 }
 
 
-
-.aside-container {
+.sidebar {
     display: grid;
-    grid-column: 3;
-    grid-row: 1 / span 3;
-    justify-items: center;
-    align-items: center;
-    background-color: lightgray;
+    grid-area: sidebar;
+    background-color: lightpink;
 }
 
-.footer-container {
+.footer {
     display: grid;
+    grid-area: footer;
+    background-color: rosybrown;
     grid-template-columns: repeat(4, 1fr);
-    background-color: lightsteelblue;
 }
 
 .footer-div {
     display: grid;
-    justify-items: center;
-    align-items: center;
-    margin: 5px;
-    background-color: seashell;
+    background-color: thistle;
 }
