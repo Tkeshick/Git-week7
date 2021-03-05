@@ -1,0 +1,23 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, 200px);
+    gap: 5px;
+
+}
+
+.wrapper>div>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+    background-color: rgb(245, 222, 214);
+    border: 1px solid grey;
+}
